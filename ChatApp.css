@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(white,rgb(177, 116, 203));
+    height: 100vh;
+}
+.nav{
+    text-align: center;
+    
+}
+.msgbox{
+    width: 60vh;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.msg{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    background-color: rgb(226, 224, 224);
+}
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+.sndmsg{
+    text-align: center;
+    margin-top: 2px;
+    padding: 0;
+}
+#inpmsg{
+    width: 52vh;
+    height: 5vh;
+    border-radius: 15px ;
+    padding: 10px;
+}
+.sndbtn{
+    width: 12vh;
+    height: 5.5vh;
+    border-radius:15px;
+}
+
