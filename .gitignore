@@ -1,0 +1,30 @@
+# Ignore Python compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore IDE settings
+.vscode/
+.idea/
+
+# Ignore logs
+*.log
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore any .env file with sensitive configurations
+.env
+
+# Ignore build directories
+node_modules/** */
+# Ignore Node.js modules
+node_modules/
+NodeServer/node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
