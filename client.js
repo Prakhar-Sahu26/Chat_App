@@ -11,7 +11,7 @@ const header = document.querySelector('.header');
 let userName = '';
 
 window.onload = () => {
-    modal.style.display = 'flex'; // Show the modal
+    modal.style.display = 'flex';
 };
 
 // Handle 'Join' button click
@@ -20,8 +20,8 @@ joinBtn.addEventListener('click', () => {
 
     if (userName) {
         socket.emit('new-user-joined', userName);
-        modal.style.display = 'none'; // Hide the modal after name is entered
-        welcome(); // Display the welcome message
+        modal.style.display = 'none';
+        welcome(); 
     } else {
         alert('Please enter a valid name');
     }
@@ -34,7 +34,6 @@ const appendmsg = (msg , postn) =>{
     msgElmt.classList.add(postn);
     msgBox.append(msgElmt);
 }
-// const name = prompt('Enter your name to join');
 
 socket.emit('new-user-joined', userName);
 form.addEventListener('submit',(e)=>{
@@ -60,4 +59,3 @@ const welcome = ()=>{
     welmsg.innerHTML = `<h2>Welcome <b>${userName}</b> to the ChatPage</h2>`
     header.append(welmsg);
 }
-// welcome();
