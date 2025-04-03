@@ -24,12 +24,17 @@ const path = require('path');
 
 const app = express();
 const server = http.createServer(app);
-const io = socketIo(server);
+const io = require('socket.io')(server, {
+    cors: {
+        origin: "*", 
+        methods: ["GET", "POST"]
+    }
+});
 
 const users = {};
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'Prakhar\'s_ChatApp.html'));
+    res.sendFile(path.join(__dirname, '..', 'The_ChatApp.html'));
 });
 
 // Serve static files if needed (adjust if necessary)
